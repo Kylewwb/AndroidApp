@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+ >
+
+    <ScrollView
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            >
+
+            <ImageButton
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_weight="0.1"
+                android:id="@+id/add_exit"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/arrow04"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="4"
+                android:text="新增托管"
+                android:textSize="17dp"
+                android:textColor="#333333"
+                android:layout_marginLeft="15dp"
+                android:gravity="center"
+                android:id="@+id/textView"
+                android:layout_gravity="center_horizontal"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/space"/>
+       </com.zhy.autolayout.AutoLinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1.2px"
+            android:background="#FF999999"/>
+        <com.zhy.autolayout.AutoLinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="40px"
+            android:paddingBottom="10px"
+            android:paddingLeft="64px">
+
+            <ImageView
+                android:id="@+id/add_xinxi"
+                android:layout_width="40px"
+                android:layout_height="40px"
+                android:src="@drawable/icon01"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="52px"
+                android:text="填写顾客信息"
+                android:textSize="28px"
+                android:gravity="center"
+                android:paddingLeft="20px"/>
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="0dp"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="26dp"
+                android:text="顾客账号"
+                android:textSize="14dp"
+                android:gravity="left"
+                android:paddingLeft="10dp"/>
+
+            <EditText
+                android:id="@+id/addusername"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:minWidth="200dp"
+                android:textSize="14dp"
+                android:hint="请输入顾客账号"
+                android:background="@null"
+                android:textColorHint="#b2b2b2"
+                android:singleLine="true"
+                android:layout_marginLeft="25dp"/>
+        </com.zhy.autolayout.AutoLinearLayout>
+        <View
+            android:layout_marginLeft="220px"
+            android:layout_marginRight="40px"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#FFCCCCCC"/>
+        <com.zhy.autolayout.AutoLinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="0dp"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="26dp"
+                android:text="顾客姓名"
+                android:textSize="14dp"
+                android:gravity="left"
+                android:paddingLeft="10dp"/>
+
+            <EditText
+                android:id="@+id/addname"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:minWidth="200dp"
+                android:background="@null"
+                android:textSize="14dp"
+                android:hint="请输入顾客姓名"
+                android:textColorHint="#b2b2b2"
+                android:singleLine="true"
+                android:layout_marginLeft="25dp"/>
+        </com.zhy.autolayout.AutoLinearLayout>
+        <View
+            android:layout_marginLeft="220px"
+            android:layout_marginRight="60px"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#FFCCCCCC"/>
+        <com.zhy.autolayout.AutoLinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="0dp"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="26dp"
+                android:text="联系电话"
+                android:textSize="14dp"
+                android:gravity="left"
+                android:paddingLeft="10dp"/>
+
+            <EditText
+                android:id="@+id/addtelnum"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:minWidth="200dp"
+                android:background="@null"
+                android:textSize="14dp"
+                android:hint="请输入联系电话"
+                android:textColorHint="#b2b2b2"
+                android:singleLine="true"
+                android:layout_marginLeft="25dp"/>
+        </com.zhy.autolayout.AutoLinearLayout>
+        <View
+            android:layout_marginLeft="220px"
+            android:layout_marginRight="60px"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#FFCCCCCC"/>
+        <com.zhy.autolayout.AutoLinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="0dp"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="托管时间"
+                android:textSize="14dp"
+                android:gravity="left"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:minWidth="200dp"
+                android:textSize="14dp"
+                android:text="2小时"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="28dp"/>
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20px"
+            android:paddingLeft="40px"
+            android:paddingRight="40px">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="220px"
+                android:id="@+id/addimg"
+                android:src="@drawable/paibg" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="请横屏使用手机拍照功能"
+                android:textSize="28px"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginTop="30px"/>
+
+            <Button
+                android:layout_width="200px"
+                android:layout_height="70px"
+                android:text="点击拍照"
+                android:textColor="#333333"
+                android:id="@+id/addp"
+                android:background="@drawable/buttonstyle"
+                android:layout_marginTop="50px"
+                android:layout_gravity="center"
+                style="?android:attr/borderlessButtonStyle"
+               />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="90px"
+                android:text="确  认"
+                android:id="@+id/addisok"
+                android:layout_marginTop="70px"
+                android:layout_gravity="center"
+                android:textColor="#fff"
+                android:textSize="16dp"
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@drawable/buttonstyle02"/>
+
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    </ScrollView>
+</com.zhy.autolayout.AutoRelativeLayout>

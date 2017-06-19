@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            >
+
+            <ImageButton
+                android:layout_width="70px"
+                android:layout_height="70px"
+                android:layout_weight="0.1"
+                android:id="@+id/getexit"
+                android:layout_marginLeft="10px"
+                android:background="@drawable/arrow04"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="100px"
+                android:layout_weight="4"
+                android:text="详情"
+                android:textSize="17dp"
+                android:textColor="#333333"
+                android:gravity="center"
+                android:layout_marginLeft="50px"
+                android:id="@+id/get_toptv"
+                android:layout_gravity="center_horizontal"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/space"/>
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <ImageView
+            android:id="@+id/getimg"
+            android:layout_width="match_parent"
+            android:layout_height="520px"
+            android:layout_gravity="center"
+            android:src="@drawable/paibg"/>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="60px"
+            android:paddingLeft="60px">
+
+            <TextView
+                android:id="@+id/getname"
+                android:layout_width="wrap_content"
+                android:layout_height="52px"
+                android:text="张三三"
+                android:textSize="40px"
+                android:textColor="#333333"
+                android:gravity="center"
+                android:paddingLeft="20px"/>
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20px"
+            android:paddingLeft="60px"
+            android:paddingRight="60px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="52px"
+                android:text="剩余时间"
+                android:textSize="28px"
+                android:gravity="left"
+                android:paddingLeft="20px"/>
+
+            <TextView
+                android:id="@+id/gettimehh1"
+                android:layout_width="wrap_content"
+                android:layout_height="52px"
+                android:text="0"
+                android:textSize="40px"
+                android:gravity="left"
+                android:paddingLeft="6px"
+                android:paddingRight="6px"
+                android:background="#555555"
+                android:radius="30dip"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="30dp"/>
+            <TextView
+                android:id="@+id/gettimehh2"
+                android:layout_width="wrap_content"
+                android:layout_height="52px"
+                android:text="0"
+                android:textSize="40px"
+                android:gravity="left"
+                android:paddingLeft="6px"
+                android:paddingRight="6px"
+                android:background="@drawable/buttonstyle02"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="10px"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="52px"
+                android:text="时"
+                android:textSize="28px"
+                android:gravity="left"
+                android:paddingLeft="10px"/>
+            <TextView
+                android:id="@+id/gettimemm1"
+                android:layout_width="wrap_content"
+                android:layout_height="52px"
+                android:text="0"
+                android:textSize="40px"
+                android:gravity="left"
+                android:paddingLeft="6px"
+                android:paddingRight="6px"
+                android:layout_marginLeft="10px"
+                android:textColor="#ffffff"
+                android:background="@drawable/buttonstyle02"/>
+            <TextView
+                android:id="@+id/gettimemm2"
+                android:layout_width="wrap_content"
+                android:layout_height="52px"
+                android:text="0"
+                android:textSize="40px"
+                android:gravity="left"
+                android:paddingLeft="6px"
+                android:paddingRight="6px"
+                android:layout_marginLeft="10px"
+                android:textColor="#ffffff"
+                android:background="@drawable/buttonstyle02"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="52px"
+                android:text="分"
+                android:textSize="28px"
+                android:gravity="left"
+                android:paddingLeft="10px"/>
+            <TextView
+                android:id="@+id/gettimess1"
+                android:layout_width="wrap_content"
+                android:layout_height="52px"
+                android:text="0"
+                android:textSize="40px"
+                android:gravity="left"
+                android:paddingLeft="6px"
+                android:paddingRight="6px"
+                android:layout_marginLeft="10px"
+                android:textColor="#ffffff"
+                android:background="@drawable/buttonstyle02"/>
+            <TextView
+                android:id="@+id/gettimess2"
+                android:layout_width="wrap_content"
+                android:layout_height="52px"
+                android:text="0"
+                android:textSize="40px"
+                android:gravity="left"
+                android:paddingLeft="6px"
+                android:paddingRight="6px"
+                android:layout_marginLeft="10px"
+                android:textColor="#ffffff"
+                android:background="@drawable/buttonstyle02"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="52px"
+                android:text="秒"
+                android:textSize="28px"
+                android:gravity="left"
+                android:paddingLeft="10px"/>
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="16px"
+            android:paddingLeft="60px"
+            android:paddingRight="60px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="托管时间"
+                android:textSize="28px"
+                android:gravity="left"
+                android:paddingLeft="20px"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="400px"
+                android:textSize="28px"
+                android:text="2小时"
+                android:textColor="#333333"
+                android:layout_marginLeft="80px"
+                android:background="@drawable/shape03"/>
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="30px"
+            android:paddingLeft="60px"
+            android:paddingRight="60px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="联系电话"
+                android:textSize="28px"
+                android:gravity="left"
+                android:paddingLeft="20px"/>
+
+            <TextView
+                android:id="@+id/gettelnum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="400px"
+                android:textSize="36px"
+                android:text="1588888888"
+                android:textColor="#333333"
+                android:background="@drawable/shape03"
+                android:layout_marginLeft="80px"/>
+        </com.zhy.autolayout.AutoLinearLayout>
+
+
+
+    </com.zhy.autolayout.AutoLinearLayout>
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="120px"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bottom">
+        <Button
+            android:layout_width="360px"
+            android:layout_height="130px"
+            android:layout_weight="1"
+            android:text="联系顾客"
+            android:textSize="25px"
+            android:background="#00000000"
+            android:drawableLeft="@drawable/tel"
+            android:paddingLeft="50px"
+            android:paddingRight="50px"
+            android:drawablePadding="10px"
+            android:gravity="center_vertical"
+            android:id="@+id/getbutton1" />
+        <View
+            android:layout_width="1px"
+            android:layout_height="80px"
+            android:layout_marginTop="20px"
+            android:background="#FFCCCCCC"/>
+        <Button
+            android:layout_width="360px"
+            android:layout_height="130px"
+            android:layout_weight="1"
+            android:text="接走宝贝"
+            android:background="#00000000"
+            android:paddingLeft="50px"
+            android:paddingRight="50px"
+            android:textSize="25px"
+            android:drawablePadding="20px"
+            android:drawableLeft="@drawable/main_img3"
+            android:gravity="center_vertical"
+            android:id="@+id/getbutton2" />
+    </com.zhy.autolayout.AutoLinearLayout>
+</com.zhy.autolayout.AutoRelativeLayout>

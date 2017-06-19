@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+    <ImageView
+        android:id="@+id/login_topimage"
+        android:layout_width="match_parent"
+        android:layout_height="300px"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/logobg"
+        android:layout_marginTop="80px"/>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="560px"
+        android:paddingLeft="40px"
+        android:paddingRight="40px"
+        android:layout_marginTop="40px"
+        android:layout_below="@+id/login_topimage"
+        >
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40px"
+            >
+            <EditText
+                android:id="@+id/login_name"
+                android:layout_width="580px"
+                android:layout_height="100px"
+                android:hint="请输入用户名"
+                android:textSize="40px"
+                android:singleLine="true"
+                android:maxLength="16"
+                android:textColor="#333333"
+                android:textColorHint="#b2b2b2"
+                android:layout_gravity="center_horizontal"
+                android:drawableLeft="@drawable/login_name"
+                android:background="@null"
+
+                android:drawablePadding="20px"
+                android:paddingLeft="10px"
+                />
+
+            <ImageView
+                android:id="@+id/login_clear"
+                android:layout_width="60px"
+                android:layout_height="60px"
+                android:src="@drawable/clear"
+                android:layout_marginRight="10px"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#ffffff"
+            />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#cccccc"
+            android:layout_marginTop="20px"
+            android:layout_marginBottom="15px"
+            />
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10px"
+        >
+        <EditText
+            android:id="@+id/login_password"
+            android:layout_width="580px"
+            android:layout_height="100px"
+            android:hint="请输入密码"
+            android:textSize="40px"
+            android:singleLine="true"
+            android:maxLength="16"
+            android:textColor="#333333"
+            android:textColorHint="#b2b2b2"
+            android:background="#00ffffff"
+            android:layout_gravity="center_horizontal"
+            android:drawableLeft="@drawable/login_password"
+            android:drawablePadding="20px"
+            android:paddingLeft="10px"/>
+
+        <ImageView
+            android:id="@+id/login_clear2"
+            android:layout_width="60px"
+            android:layout_height="60px"
+            android:src="@drawable/clear"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#ffffff"
+            />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+        <Button
+            android:id="@+id/login_button"
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:text="登 录"
+            android:textSize="30px"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#ffffff"
+            style="?android:attr/borderlessButtonStyle"
+            android:background="@drawable/buttonstyle02"
+            android:layout_marginTop="50px"/>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="2px">
+
+            <CheckBox
+                android:layout_width="240px"
+                android:layout_height="80px"
+                android:text="记住密码"
+                android:scaleX="0.8"
+                android:scaleY="0.8"
+                android:textColor="#999999"
+                android:textSize="30px"
+                android:id="@+id/checkBox"
+                android:layout_marginTop="2px"
+                style="@style/CustomCheckboxTheme"
+                 android:layout_gravity="right"/>
+        </com.zhy.autolayout.AutoLinearLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+
+</com.zhy.autolayout.AutoRelativeLayout>
